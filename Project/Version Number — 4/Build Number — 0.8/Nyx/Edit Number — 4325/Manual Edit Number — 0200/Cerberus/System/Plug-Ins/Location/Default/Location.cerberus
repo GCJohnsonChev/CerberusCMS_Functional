@@ -1,0 +1,177 @@
+<?php
+/*
+ ============================================================================================================
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ + Cerberus Content Management System
+ + ----------------------------------------------------------------------------------------------------------
+ + - Author			 : Gary Christopher Johnson of Rosedale In Southern California, U.S.A.
+ + - Company			 : Tinke Software, Free and Open Source Software
+ + - Company Address		 : Rosedale In Southern California, United States of America
+ + - Electronic Mail Address	 : CerberusCMS@Protonmail.com, TinkeSoftware@Protonmail.com
+ + - Document Notes		 : View this file in a non-formatting text editor without word-wrap for the
+ +				 : correct display of this programming code and its indentation.
+ + ----------------------------------------------------------------------------------------------------------
+ +    () --- () () () () -- ()
+ +  ()  () () () () -- () ()()()
+ +  ------
+ + Plug-In Application Module
+ + ----------------------------------------------------------------------------------------------------------
+ + - This File, Location	 : Root Directory => System => Plug-Ins => Location => Default
+ +				 : => Location.cerberus
+ + - This File, Version		 : 0.7.1
+ + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
+ + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
+ + -				 :					   :: Pre-Order Logical
+ + - Compatibility		 : Pre-Hyper-Text-Post-Processor 	   :: Version Numbers: 5, 7, 8
+ + -				 : Zend Engine				   :: Version Numbers: 3, 4
+ + - Official Release Date	 : Wednesday, November 1st of 2023
+ + ----------------------------------------------------------------------------------------------------------
+ + -------------------------------------------------------------------------------	 - Nyx -
+ + --[][]--[][][]--[][][]--[][][]---[][][]--[][][]--[]--[]------[][][]------------   []++++||=======>
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |'-._/\_.-'|
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |    []    |
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |___-[]-___|
+ + -[]-----[][][]--[][][]--[][][]---[][][]--[][][]--[]--[]------[]----------------    |__((**))__|
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    \   -[]-   /
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]------------/-\-     \   []   /
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]---VERSION--|4|-	\  []  /
+ + --[][]--[][][]--[]--[]--[][][]---[][][]--[]--[]--[][][]--[][][]------------\-/-	 '.[].'
+ + -------------------------------------------------------------------------------
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Build Number: 0.8 - Final
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Edit Number : 4,325
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ ^ ] Cerberus :: Plug-In :: Location
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ + Plug-In :: Location :: Location By Global-Positioning-System :: Coordinates :: JavaScript
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+$_Application_Module_Background_Log_GPS				= fopen("./output.txt", "a");
+
+fwrite($_Application_Module_Background_Log_GPS, "<DIV ID=\"getLocationOutputLatitude\"></DIV><BR>");
+fclose($_Application_Module_Background_Log_GPS);
+
+echo ("
+
+<!--Open Script-->
+
+<SCRIPT>
+
+<!--Variables-->
+
+<!--Get Element of Function Longitude-->
+
+var ElementGetLocationLongitude							= document.getElementById(\"getLocationOutputLongitude\");
+
+<!--Console Log of Function Longitude-->
+
+console.log(ElementGetLocationLongitude);
+console.log(getLocationLongitude());
+
+<!--Function Get Longitude-->
+
+function getLocationLongitude() {
+
+<!--IF Navigation of GeoLocation Function-->
+
+if (navigator.geolocation) {
+
+	navigator.geolocation.getCurrentPosition(showPositionLongitude);
+
+} else {
+
+ 	ElementGetLocationLatitude.innerHTML = \"Kernel Message: Geo-Location by JavaScript is not supported by this web browser.\";
+
+}
+
+}
+
+<!--Function Show Longitude Position Coordinates Based on Position Function-->
+
+function showPositionLongitude(position) {
+
+console.log(position)
+	ElementGetLocationLongitude.innerHTML = \"Longitude: \" + position.coords.longitude;
+
+}
+
+const fs = require('fs')
+
+let data = \"How to write a file in Javascript.\"
+fs.writeFile('output.txt', data, (err) => {
+ if (err) throw err;
+});
+
+<!--Close Script-->
+
+</SCRIPT>
+
+<!--Open Script-->
+
+<SCRIPT>
+
+<!--Variables-->
+
+<!--Get Element of Function Latitude-->
+
+var ElementGetLocationLatitude							= document.getElementById(\"getLocationOutputLatitude\");
+
+<!--Console Log of Function Latitude-->
+
+console.log(ElementGetLocationLatitude);
+console.log(getLocationLatitude());
+
+<!--Function Get Latitude-->
+
+function getLocationLatitude() {
+
+<!--IF Navigation of GeoLocation Function-->
+
+if (navigator.geolocation) {
+
+	navigator.geolocation.getCurrentPosition(showPositionLatitude);
+
+} else {
+
+ 	ElementGetLocationLatitude.innerHTML = \"Kernel Message: Geo-Location is not supported by this web browser.\";
+
+}
+
+}
+
+<!--Function Show Latitude Position Coordinates Based on Position Function-->
+
+function showPositionLatitude(position) {
+
+console.log(position)
+	ElementGetLocationLatitude.innerHTML = \"Latitude: \" + position.coords.latitude;
+
+}
+
+<!--Close Script-->
+
+</SCRIPT>
+");
+*/
+?>

@@ -1,0 +1,169 @@
+<?php
+/*
+ ============================================================================================================
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ + Cerberus Content Management System
+ + ----------------------------------------------------------------------------------------------------------
+ + - Author			 : Gary Christopher Johnson of Rosedale In Southern California, U.S.A.
+ + - Company			 : Tinke Software, Free and Open Source Software
+ + - Company Address		 : Rosedale In Southern California, United States of America
+ + - Electronic Mail Address	 : CerberusCMS@Protonmail.com, TinkeSoftware@Protonmail.com
+ + - Document Notes		 : View this file in a non-formatting text editor without word-wrap for the
+ +				 : correct display of this programming code and its indentation.
+ + ----------------------------------------------------------------------------------------------------------
+ +    () --- () () () () -- ()
+ +  ()  () () () () -- () ()()()
+ +  ------
+ + Plug-In Application Module
+ + ----------------------------------------------------------------------------------------------------------
+ + - This File, Location	 : Root Directory => System => Plug-Ins => Location => Default
+ +				 : => Location.cerberus
+ + - This File, Version		 : 0.7.1
+ + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
+ + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
+ + -				 :					   :: Pre-Order Logical
+ + - Compatibility		 : Pre-Hyper-Text-Post-Processor 	   :: Version Numbers: 5, 7, 8
+ + -				 : Zend Engine				   :: Version Numbers: 3, 4
+ + - Official Release Date	 : Wednesday, November 1st of 2023
+ + ----------------------------------------------------------------------------------------------------------
+ + -------------------------------------------------------------------------------	 - Nyx -
+ + --[][]--[][][]--[][][]--[][][]---[][][]--[][][]--[]--[]------[][][]------------   []++++||=======>
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |'-._/\_.-'|
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |    []    |
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |___-[]-___|
+ + -[]-----[][][]--[][][]--[][][]---[][][]--[][][]--[]--[]------[]----------------    |__((**))__|
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    \   -[]-   /
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]------------/-\-     \   []   /
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]---VERSION--|4|-	\  []  /
+ + --[][]--[][][]--[]--[]--[][][]---[][][]--[]--[]--[][][]--[][][]------------\-/-	 '.[].'
+ + -------------------------------------------------------------------------------
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Build Number: 0.8 - Final
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Edit Number : 4,325
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ ^ ] Cerberus :: Plug-In :: Location
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ + Plug-In :: Location :: Location By Global-Positioning-System :: Coordinates
+ +
+ +
+ ============================================================================================================
+*/
+
+$_GLOBAL_PLUGIN_LOCATION_GPS_COORDINATES_XX_HTML5				= "
+<SCRIPT>
+if (!navigator.geolocation) {
+	throw new Error(\"No geolocation available\");
+}
+
+function success(pos) {
+	var lat = pos.coords.latitude;
+	var lng = pos.coords.longitude;
+
+	console.log(pos);
+
+	const markup = '<a href=\"\">${lat} ${lng}</A>';
+
+	document.getElementById('output').innerHTML = lat;
+
+	navigator.geolocation.clearWatch(id);
+
+}
+
+function error() {
+
+}
+
+const options = {
+
+		enableHighAccuracy: true;
+		timeout: 1000,
+		maximumAge: 10000,
+
+};
+
+navigator.geolocation.getCurrentPosition(success, error, options);
+</SCRIPT>
+
+<div id=\"output\"></div>
+";
+
+$_GLOBAL_PLUGIN_LOCATION_GPS_COORDINATES_X_HTML5				= "
+
+<!-- 	     Location		-->
+
+<button onclick=\"getLocationLatitude()\">Try It</button>
+
+<P ID=\"HTMLGetLocationLatitude\"></P>
+
+<div id=\"HTMLGetLocationLatitude\"></div>
+
+<SCRIPT>
+var x										= document.getElementById(\"HTMLGetLocationLatitude\");
+console.log(x);
+function getLocationLatitude() {
+
+if (navigator.geolocation) {
+
+	navigator.geolocation.getCurrentPosition(showPosition);
+
+} else {
+
+ 	x.innerHTML = \"Kernel Message: Geo-Location is not supported by this web browser.\";
+
+}
+
+}
+
+function showPosition(position) {
+
+console.log(position)
+	x.innerHTML = \"Latitude: \" + position.coords.latitude;
+
+}
+
+    function successHandler(location) {
+        var message = document.getElementById(\"message\"), html = [];
+        html.push(\"<img width='512' height='512' src='http://maps.google.com/maps/api/staticmap?center=\", location.coords.latitude, \",\", location.coords.longitude, \"&markers=size:small|color:blue|\", location.coords.latitude, \",\", location.coords.longitude, \"&zoom=16&size=512x512&sensor=false' />\");
+        html.push(\"<p>Longitude: \", location.coords.longitude, \"</p>\");
+        html.push(\"<p>Latitude: \", location.coords.latitude, \"</p>\");
+        html.push(\"<p>Accuracy: \", location.coords.accuracy, \" meters</p>\");
+        message.innerHTML = html.join(\"\");
+
+        //Send this to server
+        var xmlhttp;
+            if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera
+                xmlhttp=new XMLHttpRequest();
+            } else { // code for IE6, IE5
+                xmlhttp=new ActiveXObject(\"Microsoft.XMLHTTP\");
+            }
+
+            xmlhttp.open(\"POST\",\"script.php\",true);
+            xmlhttp.setRequestHeader(\"Content-Type\", \"application/x-www-form-urlencoded; charset=UTF-8\");
+            xmlhttp.send(\"latitude=\"+location.coords.latitude+\"&longitude=\"+location.coords.longitude+\"&accuracy=\"+location.coords.accuracy);
+    }
+    function errorHandler(error) {
+        alert('Attempt to get location failed: ' + error.message);
+    }
+    navigator.geolocation.getCurrentPosition(successHandler, errorHandler);
+</SCRIPT>
+
+<div id=\"getLocationLatitude\"></div>
+";
+?>
