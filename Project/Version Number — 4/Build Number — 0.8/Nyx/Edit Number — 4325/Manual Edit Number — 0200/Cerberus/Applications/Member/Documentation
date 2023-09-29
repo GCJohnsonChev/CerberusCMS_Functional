@@ -69,14 +69,14 @@ echo ("
 												<B>Welcome to the Documentation Application Module for Cerberus Content Management System</B><BR><BR>
 
 												<B>Articles</B><BR>
-												*&nbsp;<A HREF=\"../Documentation/Articles/Version Number — 4/Build Number — 0.8/Final/Wiki/CerberusCMS.wiki\" TITLE=\":: Open & Display :: The Official Documentation File :: In :: Wiki-Style Format ::\" TARGET=\"_NEW\">Official :: Documentation :: Article :: Format :: Wiki :: CerberusCMS</A><BR><BR>
+												*&nbsp;<A HREF=\"../Documentation/Articles/Wiki/CerberusCMS.Wiki\" TITLE=\":: Open & Display :: The :: Official Documentation File :: In :: Wiki-Style Format ::\" TARGET=\"_NEW\">Official :: Documentation :: Article :: Format :: Wiki :: CerberusCMS</A><BR><BR>
 
 												<B>Manuals</B><BR>
-												*&nbsp;<A HREF=\"../Documentation/Manuals/Version Number — 4/Build Number — 0.8/Final/Hyper-Text-Markup-Language/Documentation.html\" TITLE=\":: Open & Display :: The Official Documentation File :: In :: Hyper-Text-Markup-Language Format ::\" TARGET=\"_NEW\">Official :: Documentation :: File :: Format :: Hyper-Text-Markup-Language</A><BR>
-												*&nbsp;<A HREF=\"../Documentation/Manuals/Version Number — 4/Build Number — 0.8/Final/Portable-Document-File/Documentation.pdf\" TITLE=\":: Open & Display :: The Official Documentation File :: In :: Portable-Document-File Format ::\" TARGET=\"_NEW\">Official :: Documentation :: File :: Format :: Portable-Document-File</A><BR>
-												*&nbsp;<A HREF=\"../Documentation/Manuals/Version Number — 4/Build Number — 0.8/Final/Wiki/Documentation.wiki\" TITLE=\":: Open & Display :: The Official Documentation File :: In :: Wiki-Style Format ::\" TARGET=\"_NEW\">Official :: Documentation :: File :: Format :: Wiki</A><BR><BR>
+												*&nbsp;<A HREF=\"../Documentation/Manuals/Hyper-Text-Markup-Language/Documentation.html\" TITLE=\":: Open & Display :: The :: Official Documentation File :: In :: Hyper-Text-Markup-Language Format ::\" TARGET=\"_NEW\">Official :: Documentation :: File :: Format :: Hyper-Text-Markup-Language</A><BR>
+												*&nbsp;<A HREF=\"../Documentation/Manuals/Portable-Document-File/Documentation.pdf\" TITLE=\":: Open & Display :: The :: Official Documentation File :: In :: Portable-Document-File Format ::\" TARGET=\"_NEW\">Official :: Documentation :: File :: Format :: Portable-Document-File</A><BR>
+												*&nbsp;<A HREF=\"../Documentation/Manuals/Wiki/Documentation.Wiki\" TITLE=\":: Open & Display :: The :: Official Documentation File :: In :: Wiki-Style Format ::\" TARGET=\"_NEW\">Official :: Documentation :: File :: Format :: Wiki</A><BR><BR>
 												<HR>
-												<CENTER><B>Copyright &copy; <A HREF=\"https://www.GITHub.com/TinkeSoftware\" TITLE=\":: Open & Display The :: Official Tinke Software GITHub Repository Web Page ::\" TARGET=\"_NEW\">Tinke Software</A>, <A HREF=\"mailto:GCJohnsonChevalier@Protonmail.com\" TITLE=\"Send Electronic Mail to: Gary Christopher Johnson\">Gary Christopher Johnson</A>'s Works, 2000 - 2023.</B></CENTER>
+												<CENTER><B>Copyright &copy; <A HREF=\"$_PROJECT_SERVER_URL_GITHUB_SECURE\" TITLE=\":: Open & Display :: The :: Official Tinke Software GITHub Repository Web Page ::\" TARGET=\"_NEW\">Tinke Software</A>, <A HREF=\"mailto:GCJohnsonChevalier@Protonmail.com\" TITLE=\"Send Electronic Mail to: Gary Christopher Johnson\">Gary Christopher Johnson</A>'s Works, 2000 - 2023.</B></CENTER>
 ");
 
 } // [ + ] IF: Internal Application: Display: Options Is Activated
