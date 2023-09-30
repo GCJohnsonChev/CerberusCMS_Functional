@@ -323,6 +323,42 @@ if ($_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_LAST_KNOWN_
 
 /*
  ============================================================================================================
+ +
+ +
+ + Registered Member Account :: Update :: Registered Member Account :: Status :: Active
+ +
+ +
+ ============================================================================================================
+*/
+
+$_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_STATUS_ACTIVE			= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_status_account_active='1' WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME' AND member_electronic_mail_address='$_GLOBAL_COOKIE_MEMBER_ELECTRONIC_MAIL_ADDRESS'");
+
+/*
+ ============================================================================================================
+ + IF: Database Server Query :: Update :: Registered Member Account :: Status :: Active
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_STATUS_ACTIVE) {
+/**
+ * Do Nothing
+**/
+} else {
+/**
+ * Do Nothing
+**/
+} // [ + ] IF: Database Server Query :: Update :: Registered Member Account :: Status :: Active
+
+/*
+ ============================================================================================================
+ + Kill :: Database Server Query :: Registered Member Account :: Update :: Status :: Active
+ ============================================================================================================
+*/
+
+$DB->free($_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_STATUS_ACTIVE);
+
+/*
+ ============================================================================================================
  + Kill :: Database Server Query :: Registered Member Account :: Update :: Last-Known :: Referrer
  ============================================================================================================
 */
