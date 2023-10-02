@@ -3361,7 +3361,7 @@ settings_system_security_module_status_sanitization
 'Default',
 'Default',
 '1',
-'0',
+'1',
 '1',
 '0',
 '0',
