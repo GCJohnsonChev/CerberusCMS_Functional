@@ -1,0 +1,19 @@
+<CENTER><BIG><B>Legality</B></BIG></CENTER>
+<HR>
+
+<B>This Free and Open Source Software Project is protected by International Copyright Laws</B><HR>
+This CerberusCMS Graphical Theme was created by G.C. Johnson<BR><BR>
+
+<IMG SRC="./Theme/2023_Cerberus_Cubic_Blue/Image/Legal/Author_G.C._Johnson.jpg" CLASS="LegalImageAuthor" WIDTH="300" HEIGHT="400"></IMG><BR><BR>
+
+<B>Theme Credit</B><BR>
+&middot; Theme :: Background Image: &copy; G.C. Johnson 2023<BR>
+&middot; Theme :: Control Panel :: Administration :: Icons &copy; <A HREF="https://www.LBaumann.com">Laurent Baumann</A> ( Non-Commercial Use Only )<BR>
+&middot; This Theme was created using the <I>GNU NOT Unix</I> Image Manipulation Program and &reg; Adobe &copy; PhotoShop on the Operating Systems: &reg; &copy; Arch-Linux, &reg; &copy; Gentoo-Linux and &reg; &copy; Microsoft Windows<BR><BR>
+
+<B>Theme Specifications</B><BR>
+&middot; Theme File Size ( Unpacked )<BR>
+0.00 MegaBytes<BR>
+0.00 MegaBits<BR>
+<HR>
+<CENTER>&copy; G.C. Johnson's Works, 2000 - Present-Day — All Rights Reserved.</CENTER>
