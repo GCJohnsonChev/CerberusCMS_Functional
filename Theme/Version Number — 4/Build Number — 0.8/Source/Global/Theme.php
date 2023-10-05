@@ -47,7 +47,7 @@
  ============================================================================================================
  +
  +
- + [ ^ ] Theme: 2023 :: Global
+ + [ ^ ] Theme: Global
  +
  +
  ============================================================================================================
@@ -162,13 +162,13 @@ $_THIS_THEMES_APPLICATION_MODULE_2			= "
 
 $_THIS_THEME_META_DATA					= "
 		<Link REL=\"shortcut icon\" HREF=\"./Theme/$_THIS_THEME_DIRECTORY/$_THIS_THEME_IMAGE_DIRECTORY/Icon/FavIcon.ico?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TYPE=\"image/x-icon\">
-		<META NAME=\"COPYRIGHT\" CONTENT=\"(C) Tinke Software\">
+		<META NAME=\"COPYRIGHT\" CONTENT=\"(C) $_PROJECT_DEVELOPER_STRING_NAME_EXTENDED\">
 		<META NAME=\"KEYWORDS\" CONTENT=\"Tinke Software, Tinke Byte, Content, Management, System, Cerberus, Web, Application, Framework, Apache, PHP, MySQL, SQL\">
-		<META NAME=\"DESCRIPTION\" CONTENT=\"Cerberus Content Management System, Version: 4, Build: 0.8 ~ Nyx ~\">
-		<META NAME=\"ROBOTS\" CONTENT=\"Cerberus Content Management System, Version: 4, Build: 0.8 ~ Nyx ~\">
+		<META NAME=\"DESCRIPTION\" CONTENT=\"$_PROJECT_VERSION_EXTENDED\">
+		<META NAME=\"ROBOTS\" CONTENT=\"$_PROJECT_VERSION_EXTENDED\">
 		<META NAME=\"REVISIT-AFTER\" CONTENT=\"1 DAYS\">
 		<META NAME=\"RATING\" CONTENT=\"GLOBAL\">
-		<META NAME=\"GENERATOR\" CONTENT=\"Cerberus Content Management System, Version: 4, Build: 0.8 ~ Nyx - Ghost\">
+		<META NAME=\"GENERATOR\" CONTENT=\"$_PROJECT_VERSION_EXTENDED\">
 		<META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html;charset=utf-8\">
 		<META HTTP-EQUIV=Refresh CONTENT=\"216000; URL=javascript:window.close();\">
 		<META HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\">
@@ -189,7 +189,7 @@ $_THIS_THEME_META_DATA					= "
 */
 
 $_GLOBAL_THEME_LAYOUT_1			= "
-		<CENTER><A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;News&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\"><IMG SRC=\"./Theme/$_THIS_THEME_DIRECTORY/$_THIS_THEME_IMAGE_DIRECTORY/Banner/Banner_1.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"95%\" HEIGHT=\"20%\" TITLE=\":: Open & Display The Application Module :: Latest News Articles ::\" ALT=\":: Open & Display The Application Module :: Latest News Articles ::\"></A></CENTER>
+		<CENTER><A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;News&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\"><IMG SRC=\"./Theme/$_THIS_THEME_DIRECTORY/$_THIS_THEME_IMAGE_DIRECTORY/Banner/Banner_1.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"95%\" HEIGHT=\"200%\" CLASS =\"ThemeBanner\" TITLE=\":: Open & Display :: The Application Module :: Latest News Articles ::\" ALT=\":: Open & Display The Application Module :: Latest News Articles ::\"></A></CENTER>
 
 		<CENTER>
 			<TABLE WIDTH=\"95%\">
@@ -238,6 +238,6 @@ $_GLOBAL_THEME_LAYOUT_4			= "
 			</TABLE>
 		</CENTER>
 
-		<CENTER><IMG SRC=\"./Theme/$_THIS_THEME_DIRECTORY/$_THIS_THEME_IMAGE_DIRECTORY/Banner/Banner_Bottom.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"95%\" TITLE=\"- Cerberus Content Management System -\" ALT=\"- Cerberus Content Management System -\"></CENTER>
+		<CENTER><IMG SRC=\"./Theme/$_THIS_THEME_DIRECTORY/$_THIS_THEME_IMAGE_DIRECTORY/Banner/Banner_Bottom.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"95%\" TITLE=\"- $_PROJECT_STRING_NAME_EXTENDED -\" ALT=\"- $_PROJECT_STRING_NAME_EXTENDED -\"></CENTER>
 ";
 ?>

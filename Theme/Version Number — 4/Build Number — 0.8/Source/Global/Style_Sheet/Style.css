@@ -130,7 +130,7 @@ body {
  ============================================================================================================
 */
 
-	background: #444444 url(../Image/Background/Background.jpg?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION);
+	background: #444444 url(../Image/Background/Background.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION);
 
 /*
  ============================================================================================================
@@ -396,7 +396,7 @@ input, textarea, select, option {
  ============================================================================================================
 */
 
-	background: #18213A;
+	background: #233649;
 
 /*
  ============================================================================================================
@@ -404,7 +404,7 @@ input, textarea, select, option {
  ============================================================================================================
 */
 
-	border: 1px solid #2797FF;
+	border: 1px solid #FFFFFF;
 
 } /* [ + ] Input, TextArea, Select, Option */
 
@@ -802,6 +802,18 @@ img:hover {
 	filter: alpha(opacity=100);
 
 } /* [ + ] Hover Over Images */
+
+/*
+ ============================================================================================================
+ + Image :: Application Module :: Legal => Theme => Image => Author
+ ============================================================================================================
+*/
+
+img.LegalImageAuthor {
+
+  border-radius: 20%;
+
+} /* [ + ] Image :: Application Module :: Legal :: Theme :: Image :: Author */
 
 /*
  ============================================================================================================
